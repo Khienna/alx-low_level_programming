@@ -11,11 +11,11 @@ int main(void)
 	int e;
 	int f;
 
-	for (d = 48 ; d <= 57 ; d++)
+	for (d = 48 ; d < 58 ; d++)
 	{
-		for (e = 49 ; d <= 57 ; e++)
+		for (e = 49 ; d < 58 ; e++)
 		{
-			for (f = 50 ; f <= 57 ; f++)
+			for (f = 50 ; f < 58 ; f++)
 			{
 				if (f > e && e > d)
 				{
