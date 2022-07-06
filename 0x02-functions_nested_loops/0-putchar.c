@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * taskzero - task 1
+ * main - function to print
  *
- * Return: nothing
+ * Return: 0
  */
-void taskzero(void)
+int main(void)
 {
-_putchar("_");
-_putchar("p");
-_putchar("u");
-_putchar("t");
-_putchar("c");
-_putchar("h");
-_putchar("a");
-_putchar("r");
-_putchar("\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
+	return (0);
 }
