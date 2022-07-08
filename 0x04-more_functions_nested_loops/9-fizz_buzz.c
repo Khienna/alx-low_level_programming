@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: 0
+ * fizz_buzz - Entry point
  */
-int main(void)
+void fizz_buzz(void)
 {
 	int n;
 
