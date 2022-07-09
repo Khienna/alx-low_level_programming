@@ -9,7 +9,8 @@ int main(void)
 {
 	int n = 100;
 	int i;
-
+	
+	i = 1;
 	while (i <= n)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
