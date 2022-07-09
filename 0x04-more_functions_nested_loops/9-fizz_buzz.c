@@ -1,30 +1,38 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - Entry point
+ * main - Entry point
+ *
+ * Return: void
  */
-void fizz_buzz(void)
+int main(void)
 {
-	int n;
+	int n = 100;
+	int i;
 
-	for (n = 1 ; n <= 100 ; n++)
+	while (i <= n)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
 			printf("FizzBuzz ");
 		}
-		else if (n % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("Fizz ");
 		}
-		else if (n % 5 == 0)
+		else if (i % 5 == 0)
 		{
-			printf("Buzz ");
+			if (i < n)
+				printf("Buzz ");
+			else
+				printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", n);
+			printf("%i ", i);
 		}
+		i++;
 	}
 	printf("\n");
+	return (0);
 }
