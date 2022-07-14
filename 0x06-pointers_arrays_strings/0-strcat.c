@@ -9,9 +9,16 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char a;
+	int a, b, c, i;
 
-	strcat(dest, src);
+	a = strlen(dest);
+	b = strlen(src);
+	for (c = a ; c < (a + b - 1); c++)
+	{
+		for (i = 0; i < b ; i++)
+			dest[c] = src[i];
+	}
+	dest[c] = '\0';
 
 	return (dest);
 }
