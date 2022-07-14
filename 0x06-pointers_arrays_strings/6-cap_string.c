@@ -17,10 +17,10 @@ char *cap_string(char *str)
 	c = strlen(str);
 	while (a < c)
 	{
-		d = a + 1;
-		if (str[a] == s[b] && (str[d] >= 97 && str[d] <= 122))
+		d = a - 1;
+		if ((a == 0 || str[d] == s[b]) && (str[a] >= 97 && str[a] <= 122))
 		{
-			str[d] = str[d] - 32;
+			str[a] = str[a] - 32;
 			b++;
 		}
 		a++;
