@@ -12,9 +12,9 @@ void reverse_array(int *a, int n)
 {
 	int b, c;
 
-	for (c = 0; c <= n; c++)
+	for (c = 0; c < n; c++)
 	{
-		for (b = n; b >= 0; b--)
+		for (b = (n - 1) ; b >= 0; b--)
 		{
 			a[c] = a[b];
 		}
