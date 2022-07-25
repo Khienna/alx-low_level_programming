@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 	{
 		ar[size] = c;
 	}
-	free(ar);
 
 	return (ar);
+	free(ar);
 }
