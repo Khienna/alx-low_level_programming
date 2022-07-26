@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strdup - acts like strdup
@@ -12,20 +11,21 @@ char *_strdup(char *str)
 	char *b;
 	int i, a;
 
-	i = strlen(str);
+	for (i = 0 ; str[i] != '\0' ; i++)
+	{
+	}
+
 	if (str == 0)
 		return (0);
 
-	b = malloc(sizeof(char) * i);
+	b = (char *)malloc(sizeof(char) * (i + 1));
 
 	if (b == 0)
 	{
 		return (0);
 	}
-	for (a = 0 ; a <= i ; a++)
-	{
-	       str[a] = b[a];
-	}
+	for (a = 0; a <= i; a++)
+		b[a] = str[a];
 	return (b);
 	free(b);
 }
