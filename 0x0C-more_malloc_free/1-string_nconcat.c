@@ -24,14 +24,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (b = 0; s2[b] != '\0'; b++)
 	{
 	}
+	if (n < b)
+		b = n;
 
 	s = malloc(sizeof(char) * (a + b + 1));
 	if (s == NULL)
 	{
 		return (NULL);
 	}
-	if (n < b)
-		b = n;
+
 	for (c = 0; c < (a + b) ; c++)
 	{
 		if (c < a)
