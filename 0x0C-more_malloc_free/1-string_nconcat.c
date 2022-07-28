@@ -25,20 +25,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (b = 0; s2[b] != '\0'; b++)
 	{
 	}
-	if (n < b)
-		b = n;
+	if (n > b)
+		n = b;
 
-	s = malloc(sizeof(char) * (a + b + 1));
+	s = malloc(sizeof(char) * (a + n + 1));
 	if (s == NULL)
 	{
 		return (NULL);
 	}
 
-	for (c = 0; c < (a + b) ; c++)
+	for (c = 0; c < (a + n) ; c++)
 	{
 		if (c < a)
 			s[c] = s1[c];
-		if (c >= a)
+		else
 		{
 			s[c] = s2[c - a];
 		}
