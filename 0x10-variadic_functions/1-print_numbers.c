@@ -7,12 +7,11 @@
  * print_numbers - prints numbers
  * @separator: separator
  * @n: count
- * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list a;
-	int i;
+	unsigned int i;
 
 	va_start(a, n);
 
